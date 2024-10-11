@@ -4,7 +4,7 @@ import markdown
 
 def copy_content_to_output(root_dir):
     content_dir = os.path.join(root_dir, 'content')
-    output_dir = os.path.join(root_dir, 'output')
+    output_dir = os.path.join(root_dir, 'public')
     
     # Step 3: Copy all content from content to output
     if os.path.exists(output_dir):
