@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "ik.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python3"
     }
   ],
   "routes": [
