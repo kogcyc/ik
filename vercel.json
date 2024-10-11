@@ -1,18 +1,12 @@
 {
-  "builds": [
-    {
-      "src": "ik.py",
-      "use": "@vercel/python"
-    }
-  ],
   "routes": [
     {
       "handle": "filesystem"
     },
     {
-      "src": "/(.*)",
-      "dest": "/output/$1"
+      "src": "/content(.*)",
+      "dest": "/public/$1"
     }
   ],
-  "buildCommand": "python ik.py"
+  "buildCommand": "python3 ik.py"
 }
